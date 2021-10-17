@@ -5,7 +5,8 @@ var app = express();
 app.set('port', process.env.PORT || 3001);
 
 app.get('/', function(req, res){
-    res.send('hello world');
+   // res.send('hello world');
+   res.json({"hello" : "world"});
 });
 
 // Only works on 3000 regardless of what I set environment port to or how I set
